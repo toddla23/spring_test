@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\¹ÚÁ¾Çõ\Desktop\study_flie\spring_test\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\352316972.index
+\SampleCOCProject\src\main\java
+C:\Users\¹ÚÁ¾Çõ\Desktop\study_flie\spring_test\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4002942668.index
+\SampleCOCProject\src\main\java

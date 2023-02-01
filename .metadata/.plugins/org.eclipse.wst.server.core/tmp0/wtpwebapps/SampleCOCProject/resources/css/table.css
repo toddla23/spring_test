@@ -1,0 +1,219 @@
+#sheet{ 
+  display: flex;
+  align-items:flex-end;
+  flex-direction: column;
+  width: 100%;
+  min-height: 90vh;
+  border: 2px;
+  margin: 20px;
+}
+#sheet > div{
+  margin: 10px;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+table{
+  margin:20px;
+  border: 2px solid gray;
+  border-spacing: 2px;
+}
+caption{
+  font-size: 23px;
+}
+
+td{
+  min-width: fit-content;
+  width: 40px;
+  height: 35px;
+  border: 2px solid gray;
+  font-size: 18px;
+}
+
+input{
+  width: 50px;
+  height: 20px;
+}
+#input_finished{
+  width: 30px;
+  height: 30px;
+  background-color: red;
+}
+
+#info{
+  flex-grow: 2;
+}
+
+#status{
+  flex-grow: 3;
+}
+
+#status_condition{
+  flex-grow: 4;
+}
+#status_condition input{
+  width: 80%;
+  height: 17px;
+}
+
+#title{
+  border:none;
+  background-color: #CFF0CC;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+#HP_LUK_MP
+{
+  flex-grow: 1;
+}
+
+#body_size
+{
+  flex-grow: 2;
+}
+
+#body_size_table td{
+  width: max-content;
+}
+
+#mental
+{
+  flex-grow: 1;
+}
+
+#mental_condition{
+  flex-grow: 3;
+}
+
+
+#mental_condition input{
+  width: 20em;
+  height: 17px;
+}
+
+.function_table{
+  width: fit-content;
+  margin: 0;
+}
+
+
+.function_name{
+  width: 100px;
+  height: 10px;
+  white-space:nowrap;
+}
+
+.function_table input{
+  width: 20px;
+  height: 15px;
+}
+
+#investigator_function{
+  display: flex;
+  flex-direction: row;
+}
+
+#investigator_function_table
+{
+  flex-grow: 2;
+}
+
+#investigator_function_table{
+  table-layout: auto;
+  white-space:nowrap; 
+  text-align: center;
+}
+
+#score td{
+  white-space:nowrap; 
+}
+#score input{
+  text-align: center;
+  width: 40px;
+  height: 20px;
+}
+.function_table input[type="number"]{
+  width: 30px;
+  height: 20px;
+}
+
+#backstory{
+  flex-grow: 1;
+  flex-direction: column;
+  border: 2px solid gray;
+  text-align: center;
+  height: 100%;
+}
+
+#backstory div{
+  display: flex;
+  flex-direction: row;
+  height: 10.3%;
+}
+
+
+
+.backstory_name{
+  background-color: white;
+  text-align: center;
+  font-size: 18px;
+  margin: 8px;
+  border: 2px solid gray;
+  width: 50px;
+  
+}
+
+.backstory_contents{
+  background-color: white;
+  font-size: 18px;
+  margin: 8px;
+  border: 2px solid gray;
+  flex-grow: 5;
+  height: 80%;
+  
+}
+
+.battle{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#weapon_table td{
+  text-align: center;
+  width: fit-content;
+}
+
+
+#inventory{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+}
+#inventory div{
+  flex-grow: 1;
+
+}
+
+#inventory textarea{
+  background-color: white;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid gray;
+  width: 90%;
+  height: 210px;
+  word-break: break-all;
+}

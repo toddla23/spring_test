@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="coc_sheet">
+<insert id="insert" parameterType="hashMap" useGeneratedKeys="true" keyProperty="user_id">  
+    <![CDATA[
+    insert into coc_sheet	
+    (characterName, playerName, characterJob, characterAge, characterGender, STR, DEX, POW, CON, APP, EDU, SIZ, intelligence, LUK, occupationScore, interestScore, bonusScore, totalScore, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, aa, ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, ao, ap, aq, ar, aaa, bbb, ccc) 
+    values
+    (#{characterName}, #{playerName}, #{characterJob}, #{characterAge}, #{characterGender}, #{STR}, #{DEX}, #{POW}, #{CON}, #{APP}, #{EDU}, #{SIZ}, #{intelligence}, #{LUK}, #{occupationScore}, #{interestScore}, #{bonusScore}, #{totalScore}, #{a}, #{b}, #{c}, #{d}, #{e}, #{f}, #{g}, #{h}, #{i}, #{j}, #{k}, #{l}, #{m}, #{n}, #{o}, #{p}, #{q}, #{r}, #{s}, #{t}, #{u}, #{v}, #{w}, #{x}, #{y}, #{z}, #{aa}, #{ab}, #{ac}, #{ad}, #{ae}, #{af}, #{ag}, #{ah}, #{ai}, #{aj}, #{ak}, #{al}, #{am}, #{an}, #{ao}, #{ap}, #{aq}, #{ar}, #{aaa}, #{bbb}, #{ccc})
+    ]]>
+</insert>
+</mapper>
