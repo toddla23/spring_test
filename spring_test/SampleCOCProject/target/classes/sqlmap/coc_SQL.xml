@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="coc_sheet">
+	<insert id="insert" parameterType="hashMap" useGeneratedKeys="true" keyProperty="user_id">  
+	    <![CDATA[
+	    insert into coc_sheet	
+	    (characterName, playerName, characterJob, characterAge, characterGender, STR, DEX, POW, CON, APP, EDU, SIZ, intelligence, LUK, occupationScore, interestScore, bonusScore, totalScore, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, aa, ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, ao, ap, aq, ar, aaa, bbb, ccc) 
+	    values
+	    (#{characterName}, #{playerName}, #{characterJob}, #{characterAge}, #{characterGender}, #{STR}, #{DEX}, #{POW}, #{CON}, #{APP}, #{EDU}, #{SIZ}, #{intelligence}, #{LUK}, #{occupationScore}, #{interestScore}, #{bonusScore}, #{totalScore}, #{a}, #{b}, #{c}, #{d}, #{e}, #{f}, #{g}, #{h}, #{i}, #{j}, #{k}, #{l}, #{m}, #{n}, #{o}, #{p}, #{q}, #{r}, #{s}, #{t}, #{u}, #{v}, #{w}, #{x}, #{y}, #{z}, #{aa}, #{ab}, #{ac}, #{ad}, #{ae}, #{af}, #{ag}, #{ah}, #{ai}, #{aj}, #{ak}, #{al}, #{am}, #{an}, #{ao}, #{ap}, #{aq}, #{ar}, #{aaa}, #{bbb}, #{ccc})
+	    ]]>
+	</insert>
+
+	<select id="select_detail" parameterType="hashMap" resultType="hashMap">
+	    <![CDATA[
+	    	select
+	    	characterName, playerName, characterJob, characterAge, characterGender, STR, DEX, POW, CON, APP, EDU, SIZ, intelligence, LUK, occupationScore, interestScore, bonusScore, totalScore, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, aa, ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, ao, ap, aq, ar, aaa, bbb, ccc
+	        from
+	        coc_sheet
+	        where
+	        user_id = #{userId}   
+	    ]]>
+	</select>
+
+	<update id="update" parameterType="hashMap">  
+	<![CDATA[  
+		update coc_sheet set  
+		characterName = #{characterName}, playerName = #{playerName}, characterJob = #{characterJob}, characterAge = #{characterAge}, characterGender = #{characterGender}, STR = #{STR}, DEX = #{DEX}, POW = #{POW}, CON = #{CON}, APP = #{APP}, EDU = #{EDU}, SIZ = #{SIZ}, intelligence = #{intelligence}, LUK = #{LUK}, occupationScore = #{occupationScore}, interestScore = #{interestScore}, bonusScore = #{bonusScore}, totalScore = #{totalScore}, a = #{a}, b = #{b}, c = #{c}, d = #{d}, e = #{e}, f = #{f}, g = #{g}, h = #{h}, i = #{i}, j = #{j}, k = #{k}, l = #{l}, m = #{m}, n = #{n}, o = #{o}, p = #{p}, q = #{q}, r = #{r}, s = #{s}, t = #{t}, u = #{u}, v = #{v}, w = #{w}, x = #{x}, y = #{y}, z = #{z}, aa = #{aa}, ab = #{ab}, ac = #{ac}, ad = #{ad}, ae = #{ae}, af = #{af}, ag = #{ag}, ah = #{ah}, ai = #{ai}, aj = #{aj}, ak = #{ak}, al = #{al}, am = #{am}, an = #{an}, ao= #{ao}, ap = #{ap}, aq= #{aq}, ar = #{ar}, aaa = #{aaa}, bbb = #{bbb}, ccc = #{ccc}
+		where
+		user_id = #{userId}   
+	]]>  
+	</update>
+</mapper>
